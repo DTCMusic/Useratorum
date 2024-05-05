@@ -6,7 +6,8 @@
     "telegram",
     "userbot",
 	"Dto",
-    "modular",
+    "plugin",
+"modular",
     "productivity"
   ],
   "repository": "https://github.com/DucTheVulpe/UseratorBot",
