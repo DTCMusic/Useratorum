@@ -37,7 +37,7 @@ echo -e $BOSLUQ
 echo "Repo ✅"
 echo -e $BOSLUQ
 rm -rf Qurulum
-git clone https://github.com/DTCMusic/Riya
+git clone "https://raw.githubusercontent.com/DTCMusic/useratorum/master/up.sh" --output "up.sh"
 clear
 echo -e $BOSLUQ
 echo -e $MESAJ
