@@ -1,5 +1,5 @@
 MESAJ="U S Σ R Δ T O R / S T R İ N G 💣"
-MESAJ+="\nTelegram: @UseratorOT"
+MESAJ+="\nTelegram: @NezrinLogo"
 pkg upgrade
 clear
 echo -e $MESAJ
@@ -15,7 +15,7 @@ pip install bs4
 clear
 echo -e $MESAJ
 echo "Fayl yazılır..."
-curl "https://raw.githubusercontent.com/DucTheVulpe/UseratorBot/master/userator.py" --output "userator.py"
+curl "https://raw.githubusercontent.com/DTCMusic/Useratorum/master/userator.py" --output "userator.py"
 clear
 echo -e $MESAJ
 echo "Qurulum Bitdi! İndi String Ala Bilərsiz."
