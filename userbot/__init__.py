@@ -148,7 +148,7 @@ LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
 # Alive şəkil
 IMG = os.environ.get(
     "IMG",
-    "https://telegra.ph/file/bfdeb79cc1e15d0155334.mp4")
+    "https://images.app.goo.gl/tRYHPRtevjxi68Bt7")
 
 # Anti Spambot
 ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "False"))
@@ -165,7 +165,7 @@ TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 
 # Last.fm
-BIO_PREFIX = os.environ.get("BIO_PREFIX", "@UseratorOT | ")
+BIO_PREFIX = os.environ.get("BIO_PREFIX", "@NezrinLogo | ")
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
@@ -244,7 +244,7 @@ if os.path.exists("upbrain.check"):
 else:
     LOGS.info("Braincheck faylı yoxdur, getirilir...")
 
-URL = 'https://raw.githubusercontent.com/DucTheVulpe/UseratorBot/master/upbrain.check'
+URL = 'https://raw.githubusercontent.com/DTCMusic/Useratorum/master/upbrain.check'
 with open('upbrain.check', 'wb') as load:
     load.write(get(URL).content)
 
@@ -306,8 +306,8 @@ def butonlastir(sayfa, moduller):
 with bot:
     if AVTO_Q:
         try:
-            bot(JoinChannelRequest("@UseratorOT"))
-            bot(JoinChannelRequest("@UseratorSUP"))
+            bot(JoinChannelRequest("@NezrinLogo"))
+            bot(JoinChannelRequest("@NezrinSupp"))
         except:
             pass
 
@@ -319,7 +319,7 @@ with bot:
         @tgbot.on(NewMessage(pattern='/start'))
         async def start_bot_handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Salam mən ` @UseratorOT`! Mən sahibimə (`@{me.username}`) kömək olmaq üçün varam, yəni sənə köməkçi ola bilmərəm :/ Ama sən da bir Userator quraşdıra bilərsən; Kanala bax` @DTOUserBot')
+                await event.reply(f'`Salam mən ` @NezrinLogo`! Mən sahibimə (`@{me.username}`) kömək olmaq üçün varam, yəni sənə köməkçi ola bilmərəm :/ Ama sən da bir Userator quraşdıra bilərsən; Kanala bax` @NezrinLogo')
             else:
                 await event.reply(f'`U S Σ R Δ T O R`')
 
