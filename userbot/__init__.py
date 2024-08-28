@@ -321,19 +321,19 @@ with bot:
             if not event.message.from_id == uid:
                 await event.reply(f'`Salam mən ` @NezrinLogo`! Mən sahibimə (`@{me.username}`) kömək olmaq üçün varam, yəni sənə köməkçi ola bilmərəm :/ Ama sən da bir Userator quraşdıra bilərsən; Kanala bax` @NezrinLogo')
             else:
-                await event.reply(f'`U S Σ R Δ T O R`')
+                await event.reply(f'`𝐍ə𝐳𝐫𝐢𝐧 U S Σ R Δ T O R`')
 
         @tgbot.on(InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query == "@UseratorOT":
+            if event.query.user_id == uid and query == "@NezrinLogo":
                 rev_text = query[::-1]
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Xaiş sadəcə .kömek əmri ilə işladin",
-                    text=f"**U S Σ R Δ T O R** [UseratorOT](https://t.me/UseratorOT) __⚡__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** 1/{veriler[0]}",
+                    text=f"**𝐍ə𝐳𝐫𝐢𝐧 U S Σ R Δ T O R** [NezrinLogo](https://t.me/NezrinLogo) __⚡__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
@@ -349,14 +349,14 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "@UseratorOT",
-                    text="""@UseratorOT'u işlətməyi yoxlayın!
+                    "@NezrinLogo",
+                    text="""@NezrinLogo işlətməyi yoxlayın!
 Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmayın, siz başqasının botunu idarə edə bilmərsiz! Altdakı GitHub adresindən bütün qurulum haqda məlumat var.""",
                     buttons=[
-                        [custom.Button.url("Kanala Qatıl", "https://t.me/UseratorOT"), custom.Button.url(
-                            "Qrupa Qatıl", "https://t.me/UseratorSUP")],
+                        [custom.Button.url("Kanala Qatıl", "https://t.me/Nezrinlogo"), custom.Button.url(
+                            "Qrupa Qatıl", "https://t.me/NezrinSupp")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/DucTheVulpe/UseratorBot")]
+                            "GitHub", "https://github.com/DTCMusic/Useratorum")]
                     ],
                     link_preview=False
                 )
@@ -369,7 +369,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"**U S Σ R Δ T O R** [UseratorOT](https://t.me/UseratorOT) __işləyir__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** {sayfa + 1}/{veriler[0]}",
+                f"**𝐍ə𝐳𝐫𝐢𝐧  U S Σ R Δ T O R** [Nezrinlogo](https://t.me/nezrinlogo) __işləyir__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
