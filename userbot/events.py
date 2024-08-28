@@ -70,8 +70,8 @@ def register(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     dtotext = str(check.text)
-                    text = "**✥ U S Σ R Δ T O R ΣRROR ✥**\n\n"
-                    link = "[U S Σ R Δ T O R Dəstək Qrupuna](https://t.me/UseratorSup)"
+                    text = "**π 𝐍ə𝐳𝐫𝐢𝐧 U S Σ R Δ T O R ΣRROR ✥**\n\n"
+                    link = "[𝐍ə𝐳𝐫𝐢𝐧 U S Σ R Δ T O R Dəstək Qrupuna](https://t.me/NezrinSupp)"
                     if len(dtotext)<10:
                         text += f"⌨️ **Əmr:** {dtotext}\n\n"
                     text += "**Xəta baş verdi ❗**\n"
@@ -88,7 +88,7 @@ def register(**args):
                     ftext += str(format_exc())
                     ftext += "\n\nXəta mətni:\n"
                     ftext += str(sys.exc_info()[1])
-                    ftext += "\n\n--------U S Σ R Δ T O R ΣRROR--------"
+                    ftext += "\n\n--------𝐍ə𝐳𝐫𝐢𝐧 U S Σ R Δ T O R ΣRROR--------"
 
                     command = "git log --pretty=format:\"%an: %s\" -0"
 
