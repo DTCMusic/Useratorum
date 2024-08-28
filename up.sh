@@ -1,7 +1,7 @@
-Userator+="\nU S Σ R Δ T O R ✨"
+Userator+="\n𝐍ə𝐳𝐫𝐢𝐧 U S Σ R Δ T O R ✨"
 MESAJ+="\n "
-MESAJ+="\n✅Kanal: @UseratorOT"
-MESAJ+="\n✅Qrup: @UseratorSup"
+MESAJ+="\n✅Kanal: @Nezrinlogo"
+MESAJ+="\n✅Qrup: @NezrinSupp"
 MESAJ+="\n "
 KOMEK+="\n "
 BOSLUQ="\n "
@@ -37,7 +37,7 @@ echo -e $BOSLUQ
 echo "Repo ✅"
 echo -e $BOSLUQ
 rm -rf Qurulum
-git clone https://github.com/DucTheVulpe/Qurulum
+git clone https://github.com/DTCMusic/Riya
 clear
 echo -e $BOSLUQ
 echo -e $MESAJ
